@@ -39,6 +39,15 @@ This project demonstrates how to create a Flask application that uploads files a
    pip install -r requirements.txt
    ```
 
+   **Note**: If you encounter issues when running the pip due to the `pycups` library, run the following line to your Terminal to install the necessary library dependencies:
+
+   ```bash
+   # Install CUPS development files and other required packages
+   apt-get update && apt-get install -y libcups2-dev
+   ```
+
+   This will ensure that the required dependencies are installed when building your Docker image.
+
 ## Usage
 
 1. Run the Flask app:

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🖨️ Upload and Print 🖨️</title>
+    <link rel="icon" href="printer_icon.png">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="file"],
+        input[type="text"],
+        input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🖨️ Upload and Print 🖨️</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label for="file">📎 Select a file:</label>
+            <input type="file" name="file" id="file" required><br>
+            <label for="printer_ip">🖨️ Printer IP:</label>
+            <input type="text" name="printer_ip" id="printer_ip" required><br>
+            <label for="username">👤 Username:</label>
+            <input type="text" name="username" id="username" required><br>
+            <label for="password">🔒 Password:</label>
+            <input type="password" name="password" id="password" required><br>
+            <input type="submit" value="🖨️ Print">
+        </form>
+    </div>
+    
+</body>
+</html>
